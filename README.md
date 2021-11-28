@@ -6,11 +6,11 @@ With *Code to Image*, you can quickly create beautiful images from your code lev
 
 ### Create image from current selection
 
-![Image from current selection](images/selection-to-image.gif)
+![Image from current selection](https://github.com/ThorstenHans/vscode-code-to-image/raw/main/images/selection-to-image.gif)
 
 ### Create image from entire document
 
-![Image from entire document](images/doc-to-image.gif)
+![Image from entire document](https://github.com/ThorstenHans/vscode-code-to-image/raw/main/images/doc-to-image.gif)
 
 ## Extension Settings
 
