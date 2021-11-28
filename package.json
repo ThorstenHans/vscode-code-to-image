@@ -1,0 +1,115 @@
+{
+	"name": "code-to-image",
+  "publisher": "thorstenhans",
+  "preview": true,
+  "author": {
+    "email": "thorsten.hans@gmail.com",
+    "name": "Thorsten Hans",
+    "url": "https://wwww.thorsten-hans.com"
+  },
+	"displayName": "Code to Image",
+	"description": "Create beautiful images from your code (featuring ray.so)",
+  "icon": "icons/icon.png",
+  "galleryBanner": {
+    "color": "#D20068",
+    "theme": "dark"    
+  },
+  "bugs": {
+    "url": "https://github.com/thorstenhans/vscode-code-to-image/issues",
+    "email": "thorsten.hans@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThorstenHans/vscode-code-to-image.git"
+  },
+  "homepage": "https://github.com/ThorstenHans/vscode-code-to-image/blob/main/README.md",
+	"version": "0.0.2",
+	"engines": {
+		"vscode": "^1.62.0"
+	},
+	"categories": [
+    "Visualization",
+		"Other"
+	],
+  "keywords": [
+    "snippet", "image", "picture"
+  ],
+	"activationEvents": [
+		"onCommand:code_to_image.fromSelection", 
+    "onCommand:code_to_image.fromDocument"
+	],
+	"main": "./dist/extension.js",
+	"contributes": {
+    "configuration": {
+      "title": "Code2Image",
+      "properties": {
+        "code_to_image.padding": {
+          "type": "integer",
+          "default": 16,
+          "enum": [16, 32, 64, 128],
+          "description": "Padding around the editor"
+        },
+        "code_to_image.renderBackground": {
+          "type": "boolean",
+          "default": true,
+          "description": "Should a background be rendered"
+        },
+        "code_to_image.renderDarkMode": {
+          "type": "boolean",
+          "default": true,
+          "description": "Should the image be in dark mode"
+        },
+        "code_to_image.autoDetectLanguage": {
+          "type": "boolean",
+          "default": true,
+          "description": "Let ray.so try to auto-detect code language"
+        },
+        "code_to_image.theme": {
+          "type": "string",
+          "default": "candy",
+          "enum": [ "sunset", "midnight", "breeze", "candy"],
+          "description": "ray.so color theme"
+        }
+      }
+    },
+		"commands": [
+			{
+				"command": "code_to_image.fromSelection",
+				"title": "Create image from current selection",
+        "category": "Code to Image"
+			},
+      {
+				"command": "code_to_image.fromDocument",
+				"title": "Create image from entire document",
+        "category": "Code to Image"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run package",
+		"compile": "webpack",
+		"watch": "webpack --watch",
+		"package": "webpack --mode production --devtool hidden-source-map",
+		"compile-tests": "tsc -p . --outDir out",
+		"watch-tests": "tsc -p . -w --outDir out",
+		"pretest": "npm run compile-tests && npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.62.0",
+		"@types/glob": "^7.1.4",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "14.x",
+		"@typescript-eslint/eslint-plugin": "^5.1.0",
+		"@typescript-eslint/parser": "^5.1.0",
+		"eslint": "^8.1.0",
+		"glob": "^7.1.7",
+		"mocha": "^9.1.3",
+		"typescript": "^4.4.4",
+		"ts-loader": "^9.2.5",
+		"webpack": "^5.52.1",
+		"webpack-cli": "^4.8.0",
+		"@vscode/test-electron": "^1.6.2"
+	}
+}
