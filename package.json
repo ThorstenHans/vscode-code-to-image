@@ -23,7 +23,7 @@
     "url": "https://github.com/ThorstenHans/vscode-code-to-image.git"
   },
   "homepage": "https://github.com/ThorstenHans/vscode-code-to-image/blob/main/README.md",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.62.0"
 	},

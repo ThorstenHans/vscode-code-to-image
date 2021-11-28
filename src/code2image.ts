@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import { ConfigSectionName, Configuration } from './config';
 
 function buildUrl(code: string, codeLang: string, cfg: Configuration): string {
-    const title = 'foo';
+    const title = 'Snippet';
     const lang = cfg.autoDetectLanguage ? "auto" : codeLang;
     return `https://ray.so/?colors=${cfg.theme}&background=${cfg.renderBackground}&darkMode=${cfg.renderDarkMode}&padding=${cfg.padding}&title=${title}&code=${code}&language=${lang}`
 }

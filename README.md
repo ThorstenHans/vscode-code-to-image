@@ -27,6 +27,7 @@ This extension contributes the following settings:
 
 Initial release of *Code to Image*
 
-### 0.0.2
+### 0.0.3
 
-Update marketplace listing
+* Update marketplace listing
+* Set default image title to snippet
