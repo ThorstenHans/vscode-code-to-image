@@ -2,6 +2,12 @@
 
 With *Code to Image*, you can quickly create beautiful images from your code leveraging [ray.so](https://ray.so).
 
+## Usage
+
+1. Open command palette `[CMD+Shift+P]` (`[Ctrl+Shift+P]` on Windows | Linux)
+2. Type `Code to Image` and use either `from selection` or `from document`
+3. [ray.so](https://ray.so) will show your code as beautiful image 💜
+
 ## Features
 
 ### Create image from current selection
@@ -31,3 +37,7 @@ Initial release of *Code to Image*
 
 * Update marketplace listing
 * Set default image title to snippet
+
+### 0.0.4
+
+* Add usage instructions

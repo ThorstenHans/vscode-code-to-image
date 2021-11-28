@@ -7,7 +7,7 @@
     "name": "Thorsten Hans",
     "url": "https://wwww.thorsten-hans.com"
   },
-	"displayName": "Code to Image",
+	"displayName": "Code to Image: Create beautiful code images",
 	"description": "Create beautiful images from your code (featuring ray.so)",
   "icon": "icons/icon.png",
   "galleryBanner": {
@@ -23,7 +23,7 @@
     "url": "https://github.com/ThorstenHans/vscode-code-to-image.git"
   },
   "homepage": "https://github.com/ThorstenHans/vscode-code-to-image/blob/main/README.md",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"engines": {
 		"vscode": "^1.62.0"
 	},
