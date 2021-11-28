@@ -32,7 +32,7 @@
 		"Other"
 	],
   "keywords": [
-    "snippet", "image", "picture"
+    "snippet", "image", "picture", "sharing", "raycast", "ray", "screenshot", "powerpoint", "slide", "presentation"
   ],
 	"activationEvents": [
 		"onCommand:code_to_image.fromSelection", 
